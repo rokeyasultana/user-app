@@ -1,11 +1,11 @@
-import "./App.css";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import { routes } from "./Routes/Routes";
 
-function App() {
-  return <>
-  <h1 className="text-3xl font-bold underline">
- User-app
-    </h1>
-  </>;
+export default function () {
+  return (
+    <div>
+      <RouterProvider router={routes}></RouterProvider>
+    </div>
+  );
 }
-
-export default App;
